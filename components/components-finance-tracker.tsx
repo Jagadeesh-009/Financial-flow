@@ -29,7 +29,7 @@ import { Progress } from "@/components/ui/progress"
 import { useToast } from "@/hooks/use-toast"
 import { Toaster } from "@/components/ui/toaster"
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog"
-import { ArrowUpRight, ArrowDownRight, DollarSign, PiggyBank, Trash2, Github, Linkedin, Globe, Settings, Download, Upload, Target, AlertTriangle, TrendingUp } from 'lucide-react'
+import { Globe } from 'lucide-react';
 
 ChartJS.register(
   CategoryScale,
@@ -1689,17 +1689,32 @@ export default function FinanceTracker() {
               <p className="text-sm">Your personal finance companion</p>
             </div>
             <div className="w-full md:w-1/3 text-center mt-4 md:mt-0">
-              <p className="text-sm">&copy; </p>
-              <p className="text-sm">&copy; </p>
+              <p className="text-sm">&copy; 2025 Jagadeesh - bjagadeesh@gmail.com</p>
+              <p className="text-sm">&copy; This web project is protected by copyright. You may not copy, modify, or distribute this work without explicit permission from the author.</p>
               <Button variant="link" className="mt-4 bg-blue-500 hover:bg-blue-600 text-white border-blue-500 hover:border-blue-600 transition-colors duration-300 font-semibold py-2 px-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105" onClick={() => setShowTosDialog(true)}>
                 Terms of Service ⚠️
               </Button>
             </div>
             <div className="w-full md:w-1/3 text-center md:text-right mt-4 md:mt-0">
               <div className="flex justify-center md:justify-end space-x-4">
-                
-                
-                
+                <Button variant="ghost" size="icon" asChild>
+                  <a href="https://github.com/jagadeeshl/FinancialFlow" target="_blank" rel="noopener noreferrer">
+                    <Github className="h-5 w-5" />
+                    <span className="sr-only">GitHub</span>
+                  </a>
+                </Button>
+                <Button variant="ghost" size="icon" asChild>
+                  <a href="https://www.linkedin.com/in/jaggu-30b460204/" target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="h-5 w-5" />
+                    <span className="sr-only">LinkedIn</span>
+                  </a>
+                </Button>
+                <Button variant="ghost" size="icon" asChild>
+                  <a href="https://www.jagadeesh.net" target="_blank" rel="noopener noreferrer">
+                    <Globe className="h-5 w-5" />
+                    <span className="sr-only">Portfolio</span>
+                  </a>
+                </Button>
               </div>
               <Button 
                 variant="outline" 
@@ -1862,10 +1877,11 @@ export default function FinanceTracker() {
               <h2 className="text-xl font-bold">8. Changes to Terms</h2>
               <p>The author reserves the right, at his sole discretion, to modify or replace these Terms at any time. It is your responsibility to check these Terms periodically for changes.</p>
 
-              
+              <h2 className="text-xl font-bold">9. Contact Information</h2>
+              <p>If you have any questions about these Terms, please contact Sunny Jayendra Patel at jagadeesh124555@gmail.com.</p>
 
-              
-              <p></p>
+              <h2 className="text-xl font-bold">10. Copyright Notice</h2>
+              <p>This web project is protected by copyright. You may not copy, modify, or distribute this work without explicit permission from the author, Sunny Jayendra Patel. Any unauthorized use, reproduction, or distribution of this work may result in severe civil and criminal penalties, and will be prosecuted to the maximum extent possible under the law.</p>
             </div>
           </ScrollArea>
           <DialogFooter>
